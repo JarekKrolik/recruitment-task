@@ -38,9 +38,8 @@ function startBrowserSync(done) {
 
 function watchForChanges(done) {
   watch("./*.html").on("change", reload);
-  watch([paths.html, paths.sass], parallel(sassCompiler)).on("change", reload);
+  watch([paths.sass], parallel(sassCompiler)).on("change", reload);
   done();
 }
 
-// const mainFunctions = parallel(sassCompiler);
 exports.default = series(sassCompiler, startBrowserSync, watchForChanges);
