@@ -9,7 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 body{
-    background-color: $background-color;
+    background-color: $white-color;
 }
 .navigation{
 &__mobile{
@@ -65,12 +65,13 @@ body{
     height: 100%;
     top: 0;
     left: 0;
+    transition: left 0.5s;
     padding-top: 75px;
     background-color: $black_color;
     list-style: none;
 }
 &__mobile-links.off{
-    display: none;
+    left: 102%;
 }
 
 &__mobile-link--exit-btn{
@@ -99,4 +100,43 @@ body{
     border-bottom: 2px solid $white-color;
 
 }
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    &__picture--desktop{
+        display: none;
+    }
+    &__picture--mobile{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        width: 90%;
+        overflow: hidden;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px $black_color;
+        img{
+            width: 100%;
+        }
+    }
+
+    &__text{
+        text-align: center;
+        margin-top: 25px;
+        font-family: 'Lato', sans-serif;
+    }
+    &__header{
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+        font-weight: 700;
+    }
+    &__paragraph{
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.9 rem;
+        margin-top: 25px;
+    }
 }
