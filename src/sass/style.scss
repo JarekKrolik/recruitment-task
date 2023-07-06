@@ -1,5 +1,102 @@
+@import './colors';
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: $background-color;
+}
+.navigation{
+&__mobile{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 0 2em;
+    background-color: $black_color;
+}
+&__mobile-logo{
+    color: $white-color;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 3.6rem;
+    font-weight: 700;
+    &::first-letter{text-transform: uppercase;}
+}
+&__mobile-burger-icon{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 50px;
+    height: 50px;
+    &-bar,&::after,&::before{
+        width: 90%;
+        height: 0.4rem;
+        background-color: $white-color;
+        border-radius: 3px;
+    }
+     &::after,&::before{
+      display: block;
+      content: '';
+    }
+&-bar{
+    width: 70%;
+}
+&::after{
+    width: 45%;
+}
+}
+&__mobile-links{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 75px;
+    background-color: $black_color;
+    list-style: none;
+}
+&__mobile-links.off{
+    display: none;
+}
+
+&__mobile-link--exit-btn{
+    position: absolute;
+    top:5px;
+    right:5px;
+    padding: 15px;
+    border: 2px solid $white-color;
+    color: $white-color;
+    font-size: 2.3rem;
+    width:5rem;
+    height: 5rem;
+    border-radius: 50%;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+&__mobile-link::first-letter{
+    text-transform: uppercase;
+}
+&__mobile-link{
+    width: 80%;
+    color: $white-color;
+    font-size:'Smooch Sans', sans-serif;
+    font-size: 3.2rem;
+    text-align: center;
+    border-bottom: 2px solid $white-color;
+
+}
 }
