@@ -42,6 +42,5 @@ function watchForChanges(done) {
   done();
 }
 
-const mainFunctions = parallel(sassCompiler);
-exports.cleanStuff = cleanStuff;
-exports.default = series(mainFunctions, startBrowserSync, watchForChanges);
+// const mainFunctions = parallel(sassCompiler);
+exports.default = series(sassCompiler, startBrowserSync, watchForChanges);
