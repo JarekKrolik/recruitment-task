@@ -37,3 +37,34 @@
         margin-top: 25px;
     }
 }
+@media (min-width: 992px) {
+   .article{
+    margin-top: 25px;
+    &__picture--desktop{
+         display: flex;
+        justify-content: center;
+        align-items:center;
+        width: 95%;
+        overflow: hidden;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px $black_color;
+        img{
+            width: 100%;
+        }
+    }
+    &__picture--mobile{
+        display: none;
+    }
+    &__text{
+        margin-top: 35px;
+    }
+    &__header{
+        font-size: 2.7rem;
+        line-height: 3.2rem;
+    }
+    &__paragraph{
+        font-size: 1.8rem;
+        line-height: 2.2 rem;
+    }
+}
+}

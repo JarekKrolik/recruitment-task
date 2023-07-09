@@ -9,13 +9,11 @@ const reload = browserSync.reload;
 
 const paths = {
   sass: "./src/sass/**/*.scss",
-  img: "./src/img/*",
   dist: "./dist",
   sassDest: "./dist/css",
-  imgDest: "./dist/img",
 };
 
-function sassCompiler(done) {
+const sassCompiler = (done) => {
   src(paths.sass)
     .pipe(sourcemaps.init())
     .pipe(sass().on("error", sass.logError))
@@ -25,21 +23,21 @@ function sassCompiler(done) {
     .pipe(sourcemaps.write())
     .pipe(dest(paths.sassDest));
   done();
-}
+};
 
-function startBrowserSync(done) {
+const startBrowserSync = (done) => {
   browserSync.init({
     server: {
       baseDir: "./",
     },
   });
   done();
-}
+};
 
-function watchForChanges(done) {
+const watchForChanges = (done) => {
   watch("./*.html").on("change", reload);
   watch([paths.sass], parallel(sassCompiler)).on("change", reload);
   done();
-}
+};
 
 exports.default = series(sassCompiler, startBrowserSync, watchForChanges);

@@ -48,3 +48,25 @@
         border: none;
     }
 }
+@media (min-width: 992px){
+    .cards{
+    &__container{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    &__card{
+        width: 40%;
+    }
+    &__card-header{
+        font-size: 3.8rem;
+    }
+    &__card-text{
+        font-size: 1.8rem;
+    }
+    &__card-button{
+        font-size: 2.2rem;
+    }
+}
+}
