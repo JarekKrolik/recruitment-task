@@ -1,2 +1,1 @@
-# recruitment-task
-recruitment task
+# Recruitment task for internship
