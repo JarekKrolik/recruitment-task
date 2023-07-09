@@ -68,3 +68,25 @@
     }
 }
 }
+@media (min-width: 1200px){
+ .article{
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 120px;
+    &__picture--desktop{
+        width: 45%;
+        order: 2;
+    }
+    &__text{
+       width: 45%;
+    }
+    &__header{
+        font-size: 4rem;
+        line-height: 4.8rem;
+    }
+    &__paragraph{
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+    }
+}
+}
