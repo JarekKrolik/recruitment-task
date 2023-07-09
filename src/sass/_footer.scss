@@ -5,12 +5,10 @@
     width: 100%;
     height: 6rem;
     background-color: $card-background-color; 
-
     &__text{
 font-size: 1.5rem;
 font-family: 'Smooch Sans', sans-serif;
 font-weight: 500;
-
 }
 &__text::first-letter{
     text-transform: uppercase;
@@ -20,6 +18,13 @@ font-weight: 500;
     .footer{
     &__text{
 font-size: 1.7rem;
+}
+}
+}
+@media (min-width: 1200px){
+    .footer{
+    &__text{
+font-size: 1.6rem;
 }
 }
 }
