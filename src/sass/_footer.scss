@@ -16,3 +16,10 @@ font-weight: 500;
     text-transform: uppercase;
 }
 }
+@media (min-width: 992px){
+    .footer{
+    &__text{
+font-size: 1.7rem;
+}
+}
+}
