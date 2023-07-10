@@ -4,4 +4,4 @@
 
 ## Working application on website address:
 
-https://madmaxlastv8.networkmanager.pl/
+https://www.recruitment-task.omikronelektryk.pl/
