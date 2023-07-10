@@ -5,9 +5,9 @@
     }
 &__mobile{
     position: relative;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    display: flex;
     overflow: hidden;
     width: 100%;
     height: 8rem;
@@ -27,8 +27,8 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-evenly;
-    width: 50px;
-    height: 50px;
+    width: 5rem;
+    height: 5rem;
     cursor: pointer;
     &-bar,&::after,&::before{
         width: 90%;
@@ -59,7 +59,7 @@
     height: 95vh;
     transform: translate(-50%,-50%); 
     transition: left 0.5s, transform 0.5s;
-    padding-top: 75px;
+    padding-top: 7.5rem;
     background-color: $black_color;
     border-radius: 20px;
     box-shadow: 5px 5px 5px $black_color;
@@ -69,14 +69,13 @@
     left: 102%;
     transform: translate(0,-50%);
 }
-
 &__mobile-link--exit-btn{
     position: absolute;
     top:5px;
     right:5px;
     width:5rem;
     height: 5rem;
-    padding: 15px;
+    padding: 1.5rem;
     border: 2px solid $white-color;
     color: $white-color;
     font-size: 2.3rem;
@@ -134,12 +133,6 @@
     }
     &__desktop-link{
         position: relative;
-        a{
-        color:$white-color;
-        text-decoration:none;
-        font-size: 2rem;
-        font-family: 'Smooch Sans', sans-serif;
-        font-weight: 700;}
         padding: 0 1rem;
         &::after{
             display: block;
@@ -153,7 +146,15 @@
             content: '';
             transition: width 0.3s;
         }
-        &::first-letter{text-transform: uppercase;}
+        a{
+        color:$white-color;
+        text-decoration:none;
+        font-size: 2rem;
+        font-family: 'Smooch Sans', sans-serif;
+        font-weight: 700;}
+        &::first-letter{
+            text-transform: uppercase;
+        }
         &:hover::after {
             width: 100%;
         }
@@ -164,7 +165,7 @@
         cursor: pointer;
         font-family: 'Smooch Sans', sans-serif;
         font-weight: 700;
-        padding: 8px 40px;
+        padding: 0.8rem 4rem;
         background-color: $white-color;
         color: $black-color;
         border-radius: 10px;
