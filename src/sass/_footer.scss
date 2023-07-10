@@ -6,25 +6,25 @@
     height: 6rem;
     background-color: $card-background-color; 
     &__text{
-font-size: 1.5rem;
-font-family: 'Smooch Sans', sans-serif;
-font-weight: 500;
+     font-size: 1.5rem;
+     font-family: 'Smooch Sans', sans-serif;
+     font-weight: 500;
 }
-&__text::first-letter{
+    &__text::first-letter{
     text-transform: uppercase;
-}
-}
+     }
+ }
 @media (min-width: 992px){
-    .footer{
-    &__text{
-font-size: 1.7rem;
+.footer{
+  &__text{
+  font-size: 1.7rem;
 }
 }
 }
 @media (min-width: 1200px){
-    .footer{
-    &__text{
-font-size: 1.6rem;
+.footer{
+  &__text{
+  font-size: 1.6rem;
 }
 }
 }
