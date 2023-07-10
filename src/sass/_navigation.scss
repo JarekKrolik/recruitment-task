@@ -151,7 +151,12 @@
         text-decoration:none;
         font-size: 2rem;
         font-family: 'Smooch Sans', sans-serif;
-        font-weight: 700;}
+        font-weight: 700;
+        &:focus{
+            outline: none;
+            border-bottom: 2px solid $white-color;
+        }}
+      
         &::first-letter{
             text-transform: uppercase;
         }
@@ -172,7 +177,7 @@
         border: none;
         margin-right: 2.5rem;
         transition: color 0.5s, background-color 0.5s, border 0.5s;
-        &:hover{
+        &:hover,&:focus{
         background-color: $black-color;
         color: $white-color;
         border: 1px solid $white-color;

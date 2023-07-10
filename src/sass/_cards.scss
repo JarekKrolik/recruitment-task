@@ -46,6 +46,12 @@
         color: $white-color;
         border-radius: 10px;
         border: none;
+         &:focus{
+            outline: none;
+            background-color: $white-color;
+            color: $black-color;
+            box-shadow:0 0 8px $black-color;
+        }
     }
 }
 @media (min-width: 992px){
