@@ -106,6 +106,10 @@
         color: $black-color;
         box-shadow:0 0 8px $black-color;
         }
+        &:hover:focus{
+            background-color: $black-color;
+            color: $white-color;
+        }
     }
 }
 }
